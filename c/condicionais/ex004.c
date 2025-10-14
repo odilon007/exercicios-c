@@ -9,6 +9,7 @@ int main()
 
     printf("Digite 3 lados de um triangulo: ");
     scanf("%d%d%d", &a, &b, &c);
+
     if (a<b+c && b<a+c && c<a+b) {
         if (a==b && b==c) {
             printf("triangulo equilatero");
@@ -20,5 +21,6 @@ int main()
     } else {
       printf("nao forma um triangulo");
     }
+
     return 0;
 }

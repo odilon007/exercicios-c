@@ -4,8 +4,10 @@
 int main()
 {
     int x;
+
     printf("Digite um numero entre 1 e 12: ");
     scanf("%d", &x);
+
     switch (x) {
         case 1:
             printf("jan");
@@ -46,5 +48,6 @@ int main()
         default:
             printf("invalido");
     }
+
     return 0;
 }

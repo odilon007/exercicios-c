@@ -4,8 +4,10 @@
 int main()
 {
     int x;
+
     printf("Digite um numero: ");
     scanf("%d", &x);
+
     if (x > 0) {
         printf("%d maior que zero", x);
     } else if (x<0) {
@@ -13,5 +15,6 @@ int main()
     } else {
         printf("%d eh igual a zero", x);
     }
+
     return 0;
 }
