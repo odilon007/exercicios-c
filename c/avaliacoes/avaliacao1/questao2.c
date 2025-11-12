@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*Questão 2 – Classificador de peças
+Em uma linha de produção mecânica, um sensor mede o diâmetro (em milímetros) de cada
+peça produzida. O objetivo é classificar as peças com base no diâmetro, usando if-else
+aninhado:
+- Menor que 49,5: “Peça fora do padrão – pequena demais.”
+- Entre 49,5 e 50,5: “Peça dentro do padrão.”
+- Entre 50,6 e 51,5: “Peça levemente grande – tolerância aceita.”
+- Maior que 51,5: “Peça rejeitada – grande demais.”
+Faça um programa que leia o diâmetro e imprima a classificação.
+*/
+
 int main()
 {
     float diametro;
