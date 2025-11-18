@@ -1,5 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+Um sistema de qualidade industrial registra temperatura e pressão de 10 peças.
+- Leia os pares (temperatura, pressão)
+- Uma peça é aceita se 60°C ≤ temperatura ≤ 90°C e 2 bar ≤ pressão ≤ 5 bar
+- Ao final, informe:
+- Quantas peças foram aceitas
+- Média da temperatura e da pressão das peças rejeitadas
+*/
 
 int main()
 {
