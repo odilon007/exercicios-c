@@ -14,17 +14,10 @@ int main()
     printf("Digite um numero: ");
     scanf("%d", &num);
     
-    if (num == 1 || num == 0) {
-        printf("O fatorial de %d! eh igual a: %d", num, fatorial);
-        return 0;
+    for(int i=2; i<=num; i++) {
+        fatorial *= i;
     }
-    
-    while (num > 1) {
-        fatorial *= num;
-        num--;
-    }
-    
-    printf("O fatorial de %d! eh igual a: %d", num, fatorial);
+    printf("%d! eh igual a: %d", num, fatorial);
     
     return 0;
 }

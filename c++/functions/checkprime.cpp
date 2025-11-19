@@ -1,12 +1,20 @@
 #include <iostream>
 #include <cmath>
 
+using namespace std;
 
 int primo(int n) {
-    if (n == 0 || n == 1) {
+    if (n <= 1) {
         return 0;
     }
-    for (int i=2; i<n; ++i) {
+    if (n == 2) {
+        return 1;
+    }
+    if (n % 2 == 0) {
+        return 0;
+    }
+    int limite = sqrt(n);
+    for (int i=3; i<=limite; i += 2) {
         if (n%i== 0) {
             return 0;
         }
@@ -16,12 +24,12 @@ int primo(int n) {
 int main()
 {
     int num;
-    std::cout << "digite um numero: ";
-    std::cin >> num;
-    if (primo(num) == 1) {
-        std::cout << "eh primo";
+    cout << "digite um numero: ";
+    cin >> num;
+    if (primo(num)) {
+        cout << "eh primo";
     } else {
-        std::cout << "nao eh primo";
+        cout << "nao eh primo";
     }
 
     return 0;
